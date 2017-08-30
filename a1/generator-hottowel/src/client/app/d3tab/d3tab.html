@@ -1,0 +1,39 @@
+<section class="mainbar">
+  <section class="matter">
+    <div class="container">
+      <div class="row">
+        <div class="widget wviolet">
+          <div ht-widget-header title="{{vm.title}}"></div>
+          <div class="widget-content user">
+            <h3>D3 Playground</h3>
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    <span>{{vm.title}}</span>
+                    <d3-bars data="vm.d3Data" label="name" fill='color' on-click="vm.d3OnClick(item)"></d3-bars>
+                    <br>
+                    <br>
+                    <span>#1 Item</span>
+                    <input type="text" ng-model="vm.d3Data[0].score"></input>
+                    <span>Color #1:</span>
+                    <input type="text" ng-model="vm.d3Data[0].color"></input>
+                    <br>
+                    <span>#2 Item</span>
+                    <input type="text" ng-model="vm.d3Data[1].score"></input>
+                    <span>Color #2:</span>
+                    <input type="text" ng-model="vm.d3Data[1].color"></input>
+                    <br>
+                    <span>#3 Item</span>
+                    <input type="text" ng-model="vm.d3Data[2].score"></input>
+                    <span>Color #3:</span>
+                    <input type="text" ng-model="vm.d3Data[2].color"></input>
+                  </div>
+                </div>
+          </div>
+          <div class="widget-foot">
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
